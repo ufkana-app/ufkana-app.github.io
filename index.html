@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ufkana — Akıllı Araç Asistanınız</title>
+  <meta name="description" content="Ufkana - Akıllı Araç Asistanınız resmi Gizlilik Politikası ve Kullanım Koşulları.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <img src="logo.png" alt="Ufkana Logo" class="brand-logo-img">
+        <div class="brand-title-wrap">
+          <div class="brand-name">Ufkana</div>
+          <span class="brand-tagline" data-lang-tr>Akıllı Araç Asistanınız</span>
+          <span class="brand-tagline" data-lang-en>Your Smart Vehicle Assistant</span>
+        </div>
+      </a>
+
+      <div class="header-controls">
+        <button class="lang-btn" id="btn-tr" data-lang="tr">🇹🇷 TR</button>
+        <button class="lang-btn" id="btn-en" data-lang="en">🇬🇧 EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">
+        <span data-lang-tr>🛡️ Yasal ve Güvenlik Bilgilendirmesi</span>
+        <span data-lang-en>🛡️ Legal & Privacy Information</span>
+      </div>
+      
+      <h1 data-lang-tr>Şeffaf, Güvenli ve <span class="hero-gradient-text">Gizlilik Odaklı</span></h1>
+      <h1 data-lang-en>Transparent, Secure & <span class="hero-gradient-text">Privacy-First</span></h1>
+
+      <p data-lang-tr><strong>Ufkana — Akıllı Araç Asistanınız</strong> (Paket: <code>com.ufkana.vehicle</code>) uygulamasının veri işleme prensipleri, izin gerekçeleri ve kullanım koşulları.</p>
+      <p data-lang-en>Data processing principles, permission rationales, and terms of service for <strong>Ufkana — Your Smart Vehicle Assistant</strong> (Package: <code>com.ufkana.vehicle</code>).</p>
+
+      <!-- Tabs -->
+      <div class="tab-container">
+        <div class="tabs-wrapper">
+          <button class="tab-button active" id="tab-btn-privacy">
+            🔒 <span data-lang-tr>Gizlilik Politikası</span><span data-lang-en>Privacy Policy</span>
+          </button>
+          <button class="tab-button" id="tab-btn-terms">
+            📜 <span data-lang-tr>Kullanım Koşulları</span><span data-lang-en>Terms of Service</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Meta Pill -->
+      <div class="policy-meta">
+        <div class="meta-pill">
+          <span data-lang-tr>📅 Son Güncelleme: <strong>24 Ağustos 2026</strong></span>
+          <span data-lang-en>📅 Last Updated: <strong>August 24, 2026</strong></span>
+        </div>
+        <div class="meta-pill">
+          <span data-lang-tr>📦 Paket Kimliği: <strong>com.ufkana.vehicle</strong></span>
+          <span data-lang-en>📦 Package ID: <strong>com.ufkana.vehicle</strong></span>
+        </div>
+        <div class="meta-pill">
+          <span data-lang-tr>💻 Mimari: <strong>Yerel Depolama (Local-First)</strong></span>
+          <span data-lang-en>💻 Architecture: <strong>Local-First Storage</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="document-card">
+
+      <!-- ========================================================================= -->
+      <!-- TAB 1: GİZLİLİK POLİTİKASI (PRIVACY POLICY)                               -->
+      <!-- ========================================================================= -->
+      <div class="tab-content active" id="content-privacy">
+        
+        <!-- TR SECTION: GİZLİLİK -->
+        <div data-lang-tr>
+          <div class="doc-section">
+            <h2><span class="section-num">1</span> Giriş ve Gizlilik Taahhüdümüz</h2>
+            <p><strong>Ufkana — Akıllı Araç Asistanınız</strong> geliştirici ekibi olarak, kullanıcılarımızın kişisel mahremiyetine ve araç verilerinin gizliliğine en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullandığınızda verilerinizin nasıl korunduğunu, cihazınızda nasıl saklandığını ve güvenlik standartlarımızı şeffaf bir şekilde açıklar.</p>
+            <div class="callout-box green">
+              <strong>Temel İlkemiz:</strong> Ufkana <em>"Yerel Öncelikli" (Local-First)</em> mimariyle geliştirilmiştir. Araç, yakıt, bakım ve evrak verileriniz geliştiriciye ait merkezi bir sunucuda toplanmaz; yalnızca sizin telefonunuzda saklanır.
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">2</span> Cihazınızda Saklanan Veriler (Yerel Depolama)</h2>
+            <p>Uygulama işlevlerini yerine getirebilmek için cihazınızın güvenli yerel SQLite (Room) veritabanında şu bilgileri tutar:</p>
+            <ul>
+              <li><strong>Araç Bilgileri:</strong> Plaka, marka, model, üretim yılı, yakıt/enerji türü (Benzin, Dizel, LPG, Elektrik, Hibrit, Plug-in Hibrit), başlangıç ve güncel kilometre.</li>
+              <li><strong>Yakıt ve Şarj Kayıtları:</strong> Alınan miktar (Litre / kWh), toplam tutar, birim fiyat, istasyon bilgisi, sürüş modu ve tüketim hesaplamaları.</li>
+              <li><strong>Bakım ve Masraf Geçmişi:</strong> Periyodik bakım, yedek parça, lastik değişim/ömür takibi ve servis maliyetleri.</li>
+              <li><strong>Evrak ve Hatırlatıcılar:</strong> Muayene, kasko, sigorta, egzoz emisyon bitiş tarihleri ve poliçe kayıtları.</li>
+              <li><strong>Kullanıcı Tercihleri:</strong> Para birimi (₺, $, €, £), mesafe ve tüketim birimleri, tema ve dil tercihleri.</li>
+            </ul>
+            <p>Bu veriler üçüncü şahıslara veya reklam ağlarına aktarılmaz, satılmaz ve ticari profilleme amacıyla işlenmez.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">3</span> Kullanılan İzinler ve Gerekçeleri</h2>
+            <p>Ufkana, yalnızca temel özellikleri sunmak için gereken izinleri talep eder:</p>
+            
+            <div class="data-table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>İzin (Permission)</th>
+                    <th>Kullanım Amacı</th>
+                    <th>Veri Saklama Durumu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>RECORD_AUDIO</code><br>(Mikrofon)</td>
+                    <td>Sesli Araç Asistanı ve Gemini Live canlı sesli iletişim özelliğini çalıştırmak için kullanılır.</td>
+                    <td>Ses kayıtları cihazda veya harici sunucularda <strong>kesinlikle saklanmaz</strong>. Anlık olarak analiz edilir ve işlem bitiminde yok edilir.</td>
+                  </tr>
+                  <tr>
+                    <td><code>ACCESS_FINE_LOCATION</code> & <code>COARSE_LOCATION</code><br>(Konum)</td>
+                    <td>Yakıt alımı eklerken en yakın akaryakıt/şarj istasyonunu bulmak ve formu kolayca doldurmak için kullanılır.</td>
+                    <td>Arka planda sürekli konum takibi <strong>yapılmaz</strong>. Yalnızca kullanıcı butona bastığında tek seferlik sorgulanır.</td>
+                  </tr>
+                  <tr>
+                    <td><code>POST_NOTIFICATIONS</code><br>(Bildirimler)</td>
+                    <td>Muayene, sigorta, kasko bitiş tarihleri, periyodik bakım aralıkları ve tahmini yakıt tükenme uyarılarını zamanında iletmek için kullanılır.</td>
+                    <td>Tamamen cihaz içi zamanlayıcı (WorkManager) tarafından üretilir; pazarlama veya reklam bildirimi içermez.</td>
+                  </tr>
+                  <tr>
+                    <td><code>FOREGROUND_SERVICE</code> & <code>CONNECTED_DEVICE</code></td>
+                    <td>Android Auto ekranına bağlanıldığında ve sesli asistan çalışırken arka plan servisinin kesintisiz sürmesini sağlar.</td>
+                    <td>Sadece aktif oturum süresince çalışır.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">4</span> Yapay Zeka Entegrasyonu (Google Gemini)</h2>
+            <p>Ufkana, akıllı asistan yetenekleri, doğal dil işleme ve tüketim analizleri için <strong>Google Gemini API</strong> altyapısını kullanır.</p>
+            <ul>
+              <li>Asistana ilettiğiniz metin veya sesli komutlar, yanıt üretilebilmesi için Google API uç noktalarına şifreli (HTTPS/WSS) olarak iletilir.</li>
+              <li>Bu işlem esnasında kullanıcıyı tanımlayabilecek kişisel veya hassas veriler iletilmez.</li>
+              <li>Google servislerinin veri işleme politikası hakkında ayrıntılı bilgi için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">5</span> Yedekleme ve Veri Taşınabilirliği</h2>
+            <p>Uygulama, verilerinizi cihazınızdaki <code>Downloads/Ufkana_Backup/</code> dizinine ZIP / JSON formatında dışa aktarma (yedek alma) ve geri yükleme imkanı sunar. Bu dosyalar tamamen kullanıcının mülkiyetindedir; dilediğiniz zaman silebilir, taşıyabilir veya güvenli bulut alanınıza aktarabilirsiniz.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">6</span> Veri Silme ve Kullanıcı Hakları (KVKK & GDPR)</h2>
+            <p>Kullanıcılar verileri üzerinde %100 silme ve yönetim hakkına sahiptir:</p>
+            <ul>
+              <li><strong>Tekil Kayıt Silme:</strong> Herhangi bir aracı, yakıt fişini, bakım kaydını veya evrakı uygulama içerisinden dilediğiniz an tek tek silebilirsiniz.</li>
+              <li><strong>Sistemden Temizleme / Kaldırma:</strong> Android Cihaz Ayarları > Uygulamalar > Ufkana > Depolama > "Verileri Temizle" seçeneğiyle veya uygulamayı cihazdan kaldırarak tüm yerel veritabanını kalıcı olarak yok edebilirsiniz.</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">7</span> Çocukların Gizliliği</h2>
+            <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve çocuklardan bilerek herhangi bir veri toplanmaz.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">8</span> İletişim</h2>
+            <p>Gizlilik Politikamız veya veri güvenliği ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <p>📧 E-posta: <a href="mailto:support@ufkana.com" style="color: var(--accent-blue);">support@ufkana.com</a></p>
+          </div>
+        </div>
+
+        <!-- EN SECTION: PRIVACY -->
+        <div data-lang-en>
+          <div class="doc-section">
+            <h2><span class="section-num">1</span> Introduction & Privacy Commitment</h2>
+            <p>As the development team of <strong>Ufkana — Your Smart Vehicle Assistant</strong>, we hold the privacy and security of your personal and vehicle data to the highest standard. This Privacy Policy transparently explains how your data is handled, stored locally on your device, and our security architecture.</p>
+            <div class="callout-box green">
+              <strong>Core Principle:</strong> Ufkana is built with a <em>"Local-First"</em> architecture. Your vehicles, fuel logs, maintenance history, and documents are stored strictly on your phone, not on any central developer server.
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">2</span> Data Stored on Your Device (Local Storage)</h2>
+            <p>To deliver its features, the app stores the following data in a secure on-device SQLite (Room) database:</p>
+            <ul>
+              <li><strong>Vehicle Information:</strong> License plate, make, model, model year, fuel/energy type (Gasoline, Diesel, LPG, Electric, Hybrid, Plug-in Hybrid), initial and current mileage.</li>
+              <li><strong>Fuel & Charging Records:</strong> Quantity (Liters / Gallons / kWh), total cost, unit price, station details, driving mode, and consumption figures.</li>
+              <li><strong>Maintenance & Expenses:</strong> Periodic maintenance, spare parts, tire lifespan/replacement records, and service costs.</li>
+              <li><strong>Documents & Reminders:</strong> Vehicle inspections, insurance/casco policies, emissions tests, and expiration dates.</li>
+              <li><strong>User Preferences:</strong> Currency symbols (₺, $, €, £), distance/consumption units, theme, and language.</li>
+            </ul>
+            <p>This data is never sold, monitored for ad profiling, or shared with commercial entities.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">3</span> App Permissions & Purpose</h2>
+            <p>Ufkana requests only essential permissions strictly needed for its functionality:</p>
+            
+            <div class="data-table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Permission</th>
+                    <th>Purpose</th>
+                    <th>Data Retention</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>RECORD_AUDIO</code><br>(Microphone)</td>
+                    <td>Powers the Voice Vehicle Assistant and Gemini Live interactive real-time voice features.</td>
+                    <td>Audio recordings are <strong>never stored</strong> locally or on servers. Processed in real-time and immediately discarded.</td>
+                  </tr>
+                  <tr>
+                    <td><code>ACCESS_FINE_LOCATION</code> & <code>COARSE_LOCATION</code><br>(Location)</td>
+                    <td>Used to auto-detect the nearest fuel/charging station when adding a new fuel record.</td>
+                    <td>Background location tracking is <strong>never performed</strong>. Location is queried on-demand only during user action.</td>
+                  </tr>
+                  <tr>
+                    <td><code>POST_NOTIFICATIONS</code><br>(Notifications)</td>
+                    <td>Sends timely reminders for upcoming maintenance, insurance expiry, vehicle inspection, and low-fuel predictions.</td>
+                    <td>Generated locally via WorkManager. No marketing or third-party push ads.</td>
+                  </tr>
+                  <tr>
+                    <td><code>FOREGROUND_SERVICE</code> & <code>CONNECTED_DEVICE</code></td>
+                    <td>Ensures uninterrupted background communication when connected to Android Auto or during live assistant sessions.</td>
+                    <td>Active only during connected vehicle sessions.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">4</span> Artificial Intelligence (Google Gemini)</h2>
+            <p>Ufkana uses the <strong>Google Gemini API</strong> for natural language understanding, voice assistant functionality, and predictive analysis.</p>
+            <ul>
+              <li>Your voice inputs and assistant queries are transmitted securely via encrypted connections (HTTPS/WSS) to Google API endpoints for real-time inference.</li>
+              <li>No personally identifiable data (e.g., identity cards, payment info, passwords) is transmitted.</li>
+              <li>For more details on Google's privacy principles, refer to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Privacy Policy</a>.</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">5</span> Backup & Data Portability</h2>
+            <p>Ufkana allows you to export your entire dataset into a portable ZIP/JSON file saved to your device's <code>Downloads/Ufkana_Backup/</code> directory. You maintain full ownership and can freely copy, move, back up to cloud services, or restore your data on other devices.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">6</span> Data Deletion & User Rights (GDPR / CCPA)</h2>
+            <p>You have complete control and deletion rights over your data:</p>
+            <ul>
+              <li><strong>Individual Record Deletion:</strong> You can delete any vehicle, fuel entry, maintenance record, or document individually at any time.</li>
+              <li><strong>App Uninstallation:</strong> Uninstalling the app or using Android Settings > Apps > Ufkana > Storage > "Clear Data" permanently purges the local database.</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">7</span> Children's Privacy</h2>
+            <p>Ufkana is not intended for use by children under the age of 13, and we do not knowingly collect any personal information from children.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">8</span> Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to us at:</p>
+            <p>📧 Email: <a href="mailto:support@ufkana.com" style="color: var(--accent-blue);">support@ufkana.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 2: KULLANIM KOŞULLARI (TERMS OF SERVICE)                              -->
+      <!-- ========================================================================= -->
+      <div class="tab-content" id="content-terms">
+        
+        <!-- TR SECTION: KOŞULLAR -->
+        <div data-lang-tr>
+          <div class="doc-section">
+            <h2><span class="section-num">1</span> Kabul ve Yürürlük</h2>
+            <p><strong>Ufkana — Akıllı Araç Asistanınız</strong> uygulamasını indirerek, yükleyerek veya kullanarak bu Kullanım Koşulları'nı kabul etmiş sayılırsınız.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">2</span> Hizmetin Tanımı ve Kapsamı</h2>
+            <p>Ufkana; kullanıcıların araç yakıt tüketimini, şarj durumunu, periyodik bakım ve masraflarını kaydetmelerine, evrak sürelerini takip etmelerine ve yapay zeka destekli sesli asistan ile araç verilerini analiz etmelerine yardımcı olan akıllı bir araç yönetim asistanıdır.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">3</span> Sürüş Güvenliği ve Sorumluluk Reddi</h2>
+            <div class="callout-box amber">
+              <strong>⚠️ Önemli Sürüş Uyarısı:</strong> Sürüş esnasında trafik güvenliği ve dikkatin yolda olması tamamen sürücünün sorumluluğundadır. Ufkana ve Android Auto entegrasyonu sürücü dikkatini dağıtmayacak şekilde tasarlanmış olsa da, seyir halindeyken manuel veri girişi yapılmamalı, yerel trafik kurallarına daima öncelik verilmelidir.
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">4</span> Analiz, Tahmin ve Öngörüler</h2>
+            <p>Uygulamada yer alan tüketim tahminleri, kalan menzil öngörüleri, aylık masraf projeksiyonları ve yapay zeka asistanı yanıtları matematiksel formüllere ve girilen geçmiş verilere dayanır. Bu veriler <strong>yalnızca bilgilendirme amaçlıdır</strong> ve resmi mekanik veya finansal garanti teşkil etmez.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">5</span> Veri Yedekleme Sorumluluğu</h2>
+            <p>Uygulama yerel öncelikli çalıştığı için, cihazın kaybolması, sıfırlanması veya arızalanması durumunda veri kaybını önlemek adına düzenli olarak "Yedek Al" işlevini kullanmak kullanıcının sorumluluğundadır.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">6</span> Fikri Mülkiyet ve Lisans</h2>
+            <p>Ufkana uygulamasının kaynak kodu, tasarımı, logoları, algoritmaları ve materyalleri telif hakları ile korunmaktadır. Kullanıcılara yalnızca kişisel ve ticari olmayan kullanım için geri alınabilir, devredilemez bir kullanım lisansı tanınır.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">7</span> Değişiklikler ve İletişim</h2>
+            <p>Bu Kullanım Koşulları zaman zaman güncellenebilir. Güncellenen koşullar bu sayfada yayımlandığı andan itibaren yürürlüğe girer.</p>
+            <p>Sorularınız için: <a href="mailto:support@ufkana.com" style="color: var(--accent-blue);">support@ufkana.com</a></p>
+          </div>
+        </div>
+
+        <!-- EN SECTION: TERMS -->
+        <div data-lang-en>
+          <div class="doc-section">
+            <h2><span class="section-num">1</span> Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the <strong>Ufkana — Your Smart Vehicle Assistant</strong> application, you agree to be bound by these Terms of Service.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">2</span> Service Description</h2>
+            <p>Ufkana is an intelligent vehicle assistant designed to help users track fuel consumption, EV charging, maintenance expenses, document expirations, and perform voice-assisted data queries.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">3</span> Driving Safety & Liability Disclaimer</h2>
+            <div class="callout-box amber">
+              <strong>⚠️ Critical Driving Safety Notice:</strong> Road safety and complete attention during vehicle operation are entirely the driver's responsibility. Although Ufkana and its Android Auto integration are designed to minimize driver distraction, manual interaction with the screen while driving is strictly discouraged. Always prioritize traffic laws and road safety above all else.
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">4</span> Predictions & Analytical Estimates</h2>
+            <p>Fuel depletion forecasts, range estimations, monthly expense projections, and AI assistant insights are generated based on mathematical modeling and user-entered history. These calculations are provided for <strong>informational purposes only</strong> and do not constitute professional mechanical or financial warranties.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">5</span> Data Responsibility & Backups</h2>
+            <p>Because Ufkana operates on a local-first paradigm without a centralized cloud database, users are responsible for regularly exporting and backing up their data using the built-in backup tools to prevent potential data loss resulting from device reset or damage.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">6</span> Intellectual Property & Limited License</h2>
+            <p>All source code, designs, UI elements, branding, algorithms, and content of Ufkana are protected by intellectual property laws. Users are granted a personal, non-exclusive, non-transferable, revocable license to use the app.</p>
+          </div>
+
+          <div class="doc-section">
+            <h2><span class="section-num">7</span> Modifications & Contact</h2>
+            <p>We reserve the right to revise these Terms at any time. Changes take effect immediately upon being posted to this page.</p>
+            <p>For inquiries: <a href="mailto:support@ufkana.com" style="color: var(--accent-blue);">support@ufkana.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#privacy" onclick="setTab('privacy')"><span data-lang-tr>Gizlilik Politikası</span><span data-lang-en>Privacy Policy</span></a>
+        <span>•</span>
+        <a href="#terms" onclick="setTab('terms')"><span data-lang-tr>Kullanım Koşulları</span><span data-lang-en>Terms of Service</span></a>
+      </div>
+      <p>© 2026 Ufkana — <span data-lang-tr>Akıllı Araç Asistanınız. Tüm hakları saklıdır.</span><span data-lang-en>Your Smart Vehicle Assistant. All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
