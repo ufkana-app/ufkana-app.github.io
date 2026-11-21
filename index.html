@@ -40,11 +40,11 @@
     <div class="container">
       <div class="hero-tag">
         <span data-lang-tr>🛡️ Yasal ve Güvenlik Bilgilendirmesi</span>
-        <span data-lang-en>🛡️ Legal & Privacy Information</span>
+        <span data-lang-en>🛡️ Legal &amp; Privacy Information</span>
       </div>
-      
+
       <h1 data-lang-tr>Şeffaf, Güvenli ve <span class="hero-gradient-text">Gizlilik Odaklı</span></h1>
-      <h1 data-lang-en>Transparent, Secure & <span class="hero-gradient-text">Privacy-First</span></h1>
+      <h1 data-lang-en>Transparent, Secure &amp; <span class="hero-gradient-text">Privacy-First</span></h1>
 
       <p data-lang-tr><strong>Ufkana — Akıllı Araç Asistanınız</strong> (Paket: <code>com.ufkana.vehicle</code>) uygulamasının veri işleme prensipleri, izin gerekçeleri ve kullanım koşulları.</p>
       <p data-lang-en>Data processing principles, permission rationales, and terms of service for <strong>Ufkana — Your Smart Vehicle Assistant</strong> (Package: <code>com.ufkana.vehicle</code>).</p>
@@ -64,15 +64,15 @@
       <!-- Meta Pill -->
       <div class="policy-meta">
         <div class="meta-pill">
-          <span data-lang-tr>📅 Son Güncelleme: <strong>24 Ağustos 2026</strong></span>
-          <span data-lang-en>📅 Last Updated: <strong>August 24, 2026</strong></span>
+          <span data-lang-tr>📅 Son Güncelleme: <strong>22 Kasım 2026</strong></span>
+          <span data-lang-en>📅 Last Updated: <strong>November 22, 2026</strong></span>
         </div>
         <div class="meta-pill">
           <span data-lang-tr>📦 Paket Kimliği: <strong>com.ufkana.vehicle</strong></span>
           <span data-lang-en>📦 Package ID: <strong>com.ufkana.vehicle</strong></span>
         </div>
         <div class="meta-pill">
-          <span data-lang-tr>💻 Mimari: <strong>Yerel Depolama (Local-First)</strong></span>
+          <span data-lang-tr>💻 Mimari: <strong>Yerel Öncelikli (Local-First)</strong></span>
           <span data-lang-en>💻 Architecture: <strong>Local-First Storage</strong></span>
         </div>
       </div>
@@ -87,34 +87,34 @@
       <!-- TAB 1: GİZLİLİK POLİTİKASI (PRIVACY POLICY)                               -->
       <!-- ========================================================================= -->
       <div class="tab-content active" id="content-privacy">
-        
+
         <!-- TR SECTION: GİZLİLİK -->
         <div data-lang-tr>
           <div class="doc-section">
             <h2><span class="section-num">1</span> Giriş ve Gizlilik Taahhüdümüz</h2>
-            <p><strong>Ufkana — Akıllı Araç Asistanınız</strong> geliştirici ekibi olarak, kullanıcılarımızın kişisel mahremiyetine ve araç verilerinin gizliliğine en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullandığınızda verilerinizin nasıl korunduğunu, cihazınızda nasıl saklandığını ve güvenlik standartlarımızı şeffaf bir şekilde açıklar.</p>
+            <p><strong>Ufkana — Akıllı Araç Asistanınız</strong> geliştirici ekibi olarak, kullanıcılarımızın kişisel mahremiyetine ve araç verilerinin gizliliğine en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullandığınızda verilerinizin nasıl korunduğunu, cihazınızda nasıl saklandığını ve izin kullanımımızı şeffaf bir şekilde açıklar.</p>
             <div class="callout-box green">
-              <strong>Temel İlkemiz:</strong> Ufkana <em>"Yerel Öncelikli" (Local-First)</em> mimariyle geliştirilmiştir. Araç, yakıt, bakım ve evrak verileriniz geliştiriciye ait merkezi bir sunucuda toplanmaz; yalnızca sizin telefonunuzda saklanır.
+              <strong>Temel İlkemiz:</strong> Ufkana <em>"Yerel Öncelikli" (Local-First)</em> mimariyle geliştirilmiştir. Merkezi bir Ufkana sunucusu, kullanıcı hesabı, reklam ağı veya analitik takip aracı bulunmaz. Araç, yakıt, bakım ve evrak verileriniz yalnızca sizin cihazınızda saklanır.
             </div>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">2</span> Cihazınızda Saklanan Veriler (Yerel Depolama)</h2>
-            <p>Uygulama işlevlerini yerine getirebilmek için cihazınızın güvenli yerel SQLite (Room) veritabanında şu bilgileri tutar:</p>
+            <h2><span class="section-num">2</span> Cihazınızda Saklanan Veriler ve Güvenlik</h2>
+            <p>Uygulama işlevlerini yerine getirebilmek için cihazınızın yerel SQLite (Room) veritabanında ve güvenli depolama alanında şu bilgileri tutar:</p>
             <ul>
-              <li><strong>Araç Bilgileri:</strong> Plaka, marka, model, üretim yılı, yakıt/enerji türü (Benzin, Dizel, LPG, Elektrik, Hibrit, Plug-in Hibrit), başlangıç ve güncel kilometre.</li>
-              <li><strong>Yakıt ve Şarj Kayıtları:</strong> Alınan miktar (Litre / kWh), toplam tutar, birim fiyat, istasyon bilgisi, sürüş modu ve tüketim hesaplamaları.</li>
-              <li><strong>Bakım ve Masraf Geçmişi:</strong> Periyodik bakım, yedek parça, lastik değişim/ömür takibi ve servis maliyetleri.</li>
-              <li><strong>Evrak ve Hatırlatıcılar:</strong> Muayene, kasko, sigorta, egzoz emisyon bitiş tarihleri ve poliçe kayıtları.</li>
-              <li><strong>Kullanıcı Tercihleri:</strong> Para birimi (₺, $, €, £), mesafe ve tüketim birimleri, tema ve dil tercihleri.</li>
+              <li><strong>Araç Bilgileri:</strong> Araç adı, plaka, yakıt/enerji türü (Benzin, Motorin, LPG, Elektrik, Hibrit, Plug-in Hibrit), başlangıç kilometresi ve periyodik bakım aralıkları.</li>
+              <li><strong>Yakıt ve Şarj Kayıtları:</strong> Alınan miktar (Litre / Galon / kWh), toplam tutar, istasyon bilgisi, sürüş modu, tüketim istatistikleri ve isteğe bağlı eklediğiniz fiş görselleri.</li>
+              <li><strong>Bakım ve Lastik Geçmişi:</strong> Periyodik bakım, onarım, garanti kayıtları, lastik değişim/ömür bilgileri ve isteğe bağlı eklediğiniz servis faturaları.</li>
+              <li><strong>Evrak ve Hatırlatıcılar:</strong> Araç alım bedeli, garanti, trafik sigortası, kasko, muayene, egzoz muayenesi ve MTV kayıtları ile ekli PDF/fotoğraf belgeleri.</li>
+              <li><strong>Tercihler ve API Anahtarı:</strong> Para birimi, mesafe/hacim birimleri, dil tercihi ve (isteğe bağlı girdiyseniz) kendi Google Gemini API anahtarınız. Gemini API anahtarınız <strong>Android Keystore (AES-256-GCM)</strong> donanım güvenliğiyle şifrelenerek saklanır; düz metin veritabanında tutulmaz.</li>
             </ul>
             <p>Bu veriler üçüncü şahıslara veya reklam ağlarına aktarılmaz, satılmaz ve ticari profilleme amacıyla işlenmez.</p>
           </div>
 
           <div class="doc-section">
             <h2><span class="section-num">3</span> Kullanılan İzinler ve Gerekçeleri</h2>
-            <p>Ufkana, yalnızca temel özellikleri sunmak için gereken izinleri talep eder:</p>
-            
+            <p>Ufkana yalnızca temel özellikleri sunmak için gereken en az sayıda izni talep eder. <strong>Konum (GPS) veya genel dosya/depolama izni kesinlikle talep edilmez.</strong> Fiş ve belge ekleme işlemlerinde Android sisteminin güvenli Fotoğraf Seçici / Kamera arayüzü ve Scoped Storage kullanılır.</p>
+
             <div class="data-table-wrapper">
               <table>
                 <thead>
@@ -126,24 +126,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code>RECORD_AUDIO</code><br>(Mikrofon)</td>
-                    <td>Sesli Araç Asistanı ve Gemini Live canlı sesli iletişim özelliğini çalıştırmak için kullanılır.</td>
-                    <td>Ses kayıtları cihazda veya harici sunucularda <strong>kesinlikle saklanmaz</strong>. Anlık olarak analiz edilir ve işlem bitiminde yok edilir.</td>
+                    <td><code>RECORD_AUDIO</code><br>(Mikrofon — İsteğe Bağlı)</td>
+                    <td>Telefon uygulamasında ve Android Auto (Car App API Level 5+) ekranında sesli komutlar ile Gemini Live canlı sesli asistanı çalıştırmak için kullanılır.</td>
+                    <td>Ses kayıtları cihazda veya Ufkana sunucularında <strong>kesinlikle saklanmaz</strong>; yalnızca aktif oturumda anlık olarak işlenir.</td>
                   </tr>
                   <tr>
-                    <td><code>ACCESS_FINE_LOCATION</code> & <code>COARSE_LOCATION</code><br>(Konum)</td>
-                    <td>Yakıt alımı eklerken en yakın akaryakıt/şarj istasyonunu bulmak ve formu kolayca doldurmak için kullanılır.</td>
-                    <td>Arka planda sürekli konum takibi <strong>yapılmaz</strong>. Yalnızca kullanıcı butona bastığında tek seferlik sorgulanır.</td>
-                  </tr>
-                  <tr>
-                    <td><code>POST_NOTIFICATIONS</code><br>(Bildirimler)</td>
-                    <td>Muayene, sigorta, kasko bitiş tarihleri, periyodik bakım aralıkları ve tahmini yakıt tükenme uyarılarını zamanında iletmek için kullanılır.</td>
+                    <td><code>POST_NOTIFICATIONS</code><br>(Bildirimler — İsteğe Bağlı)</td>
+                    <td>Yaklaşan periyodik bakım, muayene, sigorta, kasko, garanti ve MTV tarihleri için zamanında hatırlatma ve Android Auto uyarıları göndermek için kullanılır.</td>
                     <td>Tamamen cihaz içi zamanlayıcı (WorkManager) tarafından üretilir; pazarlama veya reklam bildirimi içermez.</td>
                   </tr>
                   <tr>
-                    <td><code>FOREGROUND_SERVICE</code> & <code>CONNECTED_DEVICE</code></td>
-                    <td>Android Auto ekranına bağlanıldığında ve sesli asistan çalışırken arka plan servisinin kesintisiz sürmesini sağlar.</td>
-                    <td>Sadece aktif oturum süresince çalışır.</td>
+                    <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
+                    <td>Yalnızca kullanıcı kendi Google Gemini API anahtarını girdiğinde Gemini Live, AI Araç Analizi ve görsel fiş/fatura taraması için Google API uç noktalarına bağlanmak amacıyla kullanılır.</td>
+                    <td>API anahtarı girilmezse uygulama %100 çevrimdışı (yerel NLU ve cihaz içi ML Kit OCR) çalışır ve ağa veri göndermez.</td>
                   </tr>
                 </tbody>
               </table>
@@ -151,26 +146,31 @@
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">4</span> Yapay Zeka Entegrasyonu (Google Gemini)</h2>
-            <p>Ufkana, akıllı asistan yetenekleri, doğal dil işleme ve tüketim analizleri için <strong>Google Gemini API</strong> altyapısını kullanır.</p>
+            <h2><span class="section-num">4</span> İsteğe Bağlı Yapay Zeka Entegrasyonu (Google Gemini — BYOK)</h2>
+            <p>Ufkana, <em>"Kendi Anahtarını Kullan" (BYOK)</em> modeliyle çalışır:</p>
             <ul>
-              <li>Asistana ilettiğiniz metin veya sesli komutlar, yanıt üretilebilmesi için Google API uç noktalarına şifreli (HTTPS/WSS) olarak iletilir.</li>
-              <li>Bu işlem esnasında kullanıcıyı tanımlayabilecek kişisel veya hassas veriler iletilmez.</li>
-              <li>Google servislerinin veri işleme politikası hakkında ayrıntılı bilgi için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</li>
+              <li><strong>Çevrimdışı Varsayılan Mod:</strong> Gemini API anahtarı tanımlamadığınız sürece sesli sorgular cihaz içi yerel NLU motoruyla, fiş okumaları cihaz içi ML Kit ile tamamen çevrimdışı işlenir.</li>
+              <li><strong>Gemini Aktif Mod:</strong> Kendi Google AI Studio API anahtarınızı girdiğinizde, yapay zeka asistanını veya görsel analizi başlattığınız anda ilgili araç özeti, komut veya fiş görseli ara bir Ufkana sunucusuna uğramadan doğrudan <strong>Google Gemini API</strong> uç noktalarına şifreli (HTTPS/WSS) olarak iletilir.</li>
+              <li>Google servislerinin veri işleme politikası için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Gizlilik Politikası</a> ve <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener" style="color: var(--accent-blue);">Gemini API Kullanım Koşulları</a> sayfalarını inceleyebilirsiniz.</li>
             </ul>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">5</span> Yedekleme ve Veri Taşınabilirliği</h2>
-            <p>Uygulama, verilerinizi cihazınızdaki <code>Downloads/Ufkana_Backup/</code> dizinine ZIP / JSON formatında dışa aktarma (yedek alma) ve geri yükleme imkanı sunar. Bu dosyalar tamamen kullanıcının mülkiyetindedir; dilediğiniz zaman silebilir, taşıyabilir veya güvenli bulut alanınıza aktarabilirsiniz.</p>
+            <h2><span class="section-num">5</span> Yedekleme, Güvenlik ve Veri Taşınabilirliği</h2>
+            <p>Uygulama, Android Scoped Storage kullanarak verilerinizi <code>Downloads/Ufkana_Backup/</code> dizinine <strong>ZIP (CSV tabloları + fiş `.webp` görselleri + evrak `.pdf` ekleri)</strong> formatında dışa aktarma ve geri yükleme imkanı sunar:</p>
+            <ul>
+              <li>Otomatik yedeklemeler aynı gün içinde tek dosya üzerine güncellenir ve en güncel 2 otomatik yedek korunur.</li>
+              <li><strong>Hassas Anahtar İzolasyonu:</strong> Güvenliğiniz için şifreli Gemini API anahtarınız ve benzeri hassas kimlik bilgileri dışa aktarılan ZIP yedeklerine <strong>kesinlikle dahil edilmez</strong>.</li>
+              <li>Geri yükleme işleminde ZIP arşivinin bütünlüğü ve dosya yolları (Zip-Slip koruması) doğrulanmadan mevcut veritabanı değiştirilmez.</li>
+            </ul>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">6</span> Veri Silme ve Kullanıcı Hakları (KVKK & GDPR)</h2>
-            <p>Kullanıcılar verileri üzerinde %100 silme ve yönetim hakkına sahiptir:</p>
+            <h2><span class="section-num">6</span> Veri Silme ve Kullanıcı Hakları (KVKK &amp; GDPR)</h2>
+            <p>Verileriniz yalnızca cihazınızda bulunduğu için üzerinde %100 kontrol ve silme hakkına sahipsiniz:</p>
             <ul>
-              <li><strong>Tekil Kayıt Silme:</strong> Herhangi bir aracı, yakıt fişini, bakım kaydını veya evrakı uygulama içerisinden dilediğiniz an tek tek silebilirsiniz.</li>
-              <li><strong>Sistemden Temizleme / Kaldırma:</strong> Android Cihaz Ayarları > Uygulamalar > Ufkana > Depolama > "Verileri Temizle" seçeneğiyle veya uygulamayı cihazdan kaldırarak tüm yerel veritabanını kalıcı olarak yok edebilirsiniz.</li>
+              <li><strong>Tekil Kayıt Silme:</strong> Herhangi bir aracı, yakıt/şarj kaydını, bakımı, lastiği, evrakı veya API anahtarınızı uygulama içinden dilediğiniz an silebilirsiniz.</li>
+              <li><strong>Tam Temizlik:</strong> Android Ayarları &gt; Uygulamalar &gt; Ufkana &gt; Depolama &gt; "Verileri Temizle" seçeneğiyle veya uygulamayı kaldırarak tüm yerel veritabanını ve Keystore şifreleme anahtarını kalıcı olarak silebilirsiniz. İsterseniz <code>Downloads/Ufkana_Backup/</code> klasöründeki yedek ZIP dosyalarını dosya yöneticisinden silebilirsiniz.</li>
             </ul>
           </div>
 
@@ -189,30 +189,30 @@
         <!-- EN SECTION: PRIVACY -->
         <div data-lang-en>
           <div class="doc-section">
-            <h2><span class="section-num">1</span> Introduction & Privacy Commitment</h2>
-            <p>As the development team of <strong>Ufkana — Your Smart Vehicle Assistant</strong>, we hold the privacy and security of your personal and vehicle data to the highest standard. This Privacy Policy transparently explains how your data is handled, stored locally on your device, and our security architecture.</p>
+            <h2><span class="section-num">1</span> Introduction &amp; Privacy Commitment</h2>
+            <p>As the developer of <strong>Ufkana — Your Smart Vehicle Assistant</strong>, we prioritize your privacy and the security of your vehicle records. This Privacy Policy transparently explains how your data is stored locally on your device, how permissions are used, and how optional AI features operate.</p>
             <div class="callout-box green">
-              <strong>Core Principle:</strong> Ufkana is built with a <em>"Local-First"</em> architecture. Your vehicles, fuel logs, maintenance history, and documents are stored strictly on your phone, not on any central developer server.
+              <strong>Core Principle:</strong> Ufkana is built with a <em>"Local-First"</em> architecture. There is no central Ufkana server, user account, ad network, or analytics tracker. All vehicle, fuel, maintenance, and document data stays exclusively on your device.
             </div>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">2</span> Data Stored on Your Device (Local Storage)</h2>
-            <p>To deliver its features, the app stores the following data in a secure on-device SQLite (Room) database:</p>
+            <h2><span class="section-num">2</span> Data Stored on Your Device &amp; Security</h2>
+            <p>To deliver its features, Ufkana stores the following data in your device's local SQLite (Room) database and secure storage:</p>
             <ul>
-              <li><strong>Vehicle Information:</strong> License plate, make, model, model year, fuel/energy type (Gasoline, Diesel, LPG, Electric, Hybrid, Plug-in Hybrid), initial and current mileage.</li>
-              <li><strong>Fuel & Charging Records:</strong> Quantity (Liters / Gallons / kWh), total cost, unit price, station details, driving mode, and consumption figures.</li>
-              <li><strong>Maintenance & Expenses:</strong> Periodic maintenance, spare parts, tire lifespan/replacement records, and service costs.</li>
-              <li><strong>Documents & Reminders:</strong> Vehicle inspections, insurance/casco policies, emissions tests, and expiration dates.</li>
-              <li><strong>User Preferences:</strong> Currency symbols (₺, $, €, £), distance/consumption units, theme, and language.</li>
+              <li><strong>Vehicle Information:</strong> Vehicle name, license plate, powertrain/fuel type (Gasoline, Diesel, LPG, Electric, Hybrid, Plug-in Hybrid), initial odometer, and periodic service intervals.</li>
+              <li><strong>Fuel &amp; Charging Records:</strong> Quantity (Liters / Gallons / kWh), total cost, station name, driving mode, consumption statistics, and optional receipt images you attach.</li>
+              <li><strong>Maintenance &amp; Tire History:</strong> Periodic maintenance, repairs, warranty work, tire lifespan/replacement records, and optional invoice attachments.</li>
+              <li><strong>Documents &amp; Reminders:</strong> Vehicle purchase records, warranty, traffic/comprehensive insurance, inspections, emissions checks, road tax (MTV), and attached PDF/photo files.</li>
+              <li><strong>Preferences &amp; API Key:</strong> Currency, distance/volume units, language preference, and (if you choose to enter one) your personal Google Gemini API key. Your Gemini API key is encrypted at rest using hardware-backed <strong>Android Keystore (AES-256-GCM)</strong> and is never kept in plaintext in the database.</li>
             </ul>
-            <p>This data is never sold, monitored for ad profiling, or shared with commercial entities.</p>
+            <p>This data is never sold, used for advertising profiles, or shared with third-party brokers.</p>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">3</span> App Permissions & Purpose</h2>
-            <p>Ufkana requests only essential permissions strictly needed for its functionality:</p>
-            
+            <h2><span class="section-num">3</span> App Permissions &amp; Purpose</h2>
+            <p>Ufkana requests only the minimal permissions needed for optional features. <strong>Location (GPS) and broad file/storage permissions are never requested.</strong> Attaching receipts or documents uses Android's system Photo Picker / Camera intents and Scoped Storage.</p>
+
             <div class="data-table-wrapper">
               <table>
                 <thead>
@@ -224,24 +224,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code>RECORD_AUDIO</code><br>(Microphone)</td>
-                    <td>Powers the Voice Vehicle Assistant and Gemini Live interactive real-time voice features.</td>
-                    <td>Audio recordings are <strong>never stored</strong> locally or on servers. Processed in real-time and immediately discarded.</td>
+                    <td><code>RECORD_AUDIO</code><br>(Microphone — Optional)</td>
+                    <td>Powers voice queries and hands-free Gemini Live sessions on your phone and Android Auto (Car App API Level 5+).</td>
+                    <td>Audio is <strong>never recorded or stored</strong> locally or on Ufkana servers; it is processed only in real time during an active session.</td>
                   </tr>
                   <tr>
-                    <td><code>ACCESS_FINE_LOCATION</code> & <code>COARSE_LOCATION</code><br>(Location)</td>
-                    <td>Used to auto-detect the nearest fuel/charging station when adding a new fuel record.</td>
-                    <td>Background location tracking is <strong>never performed</strong>. Location is queried on-demand only during user action.</td>
+                    <td><code>POST_NOTIFICATIONS</code><br>(Notifications — Optional)</td>
+                    <td>Delivers timely reminders for upcoming periodic maintenance, insurance, inspection, warranty, and road tax deadlines, including Android Auto alerts.</td>
+                    <td>Generated strictly on-device via WorkManager; no marketing or third-party push notifications.</td>
                   </tr>
                   <tr>
-                    <td><code>POST_NOTIFICATIONS</code><br>(Notifications)</td>
-                    <td>Sends timely reminders for upcoming maintenance, insurance expiry, vehicle inspection, and low-fuel predictions.</td>
-                    <td>Generated locally via WorkManager. No marketing or third-party push ads.</td>
-                  </tr>
-                  <tr>
-                    <td><code>FOREGROUND_SERVICE</code> & <code>CONNECTED_DEVICE</code></td>
-                    <td>Ensures uninterrupted background communication when connected to Android Auto or during live assistant sessions.</td>
-                    <td>Active only during connected vehicle sessions.</td>
+                    <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
+                    <td>Used solely when you supply your own Google Gemini API key to connect directly to Google Gemini API endpoints for Gemini Live, AI vehicle analysis, or visual receipt scanning.</td>
+                    <td>Without an API key, the app operates 100% offline (local NLU engine and on-device ML Kit OCR) with zero network transmissions.</td>
                   </tr>
                 </tbody>
               </table>
@@ -249,32 +244,37 @@
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">4</span> Artificial Intelligence (Google Gemini)</h2>
-            <p>Ufkana uses the <strong>Google Gemini API</strong> for natural language understanding, voice assistant functionality, and predictive analysis.</p>
+            <h2><span class="section-num">4</span> Optional Artificial Intelligence (Google Gemini — BYOK)</h2>
+            <p>Ufkana follows a <em>"Bring Your Own Key" (BYOK)</em> model:</p>
             <ul>
-              <li>Your voice inputs and assistant queries are transmitted securely via encrypted connections (HTTPS/WSS) to Google API endpoints for real-time inference.</li>
-              <li>No personally identifiable data (e.g., identity cards, payment info, passwords) is transmitted.</li>
-              <li>For more details on Google's privacy principles, refer to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Privacy Policy</a>.</li>
+              <li><strong>Offline Default Mode:</strong> If you do not enter a Gemini API key, voice commands are handled by the on-device NLU engine and receipt scanning uses on-device ML Kit OCR completely offline.</li>
+              <li><strong>Gemini Enabled Mode:</strong> When you provide your own Google AI Studio API key and invoke an AI feature, the relevant vehicle summary, voice/text prompt, or receipt image is sent directly over encrypted HTTPS/WSS to <strong>Google Gemini API</strong> endpoints without passing through any Ufkana server.</li>
+              <li>For Google's data handling policies, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent-blue);">Google Privacy Policy</a> and <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener" style="color: var(--accent-blue);">Gemini API Terms of Service</a>.</li>
             </ul>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">5</span> Backup & Data Portability</h2>
-            <p>Ufkana allows you to export your entire dataset into a portable ZIP/JSON file saved to your device's <code>Downloads/Ufkana_Backup/</code> directory. You maintain full ownership and can freely copy, move, back up to cloud services, or restore your data on other devices.</p>
+            <h2><span class="section-num">5</span> Backup, Security &amp; Data Portability</h2>
+            <p>Using Android Scoped Storage, Ufkana lets you export and restore your dataset as a portable <strong>ZIP archive (CSV tables + `.webp` receipts + `.pdf` document attachments)</strong> in <code>Downloads/Ufkana_Backup/</code>:</p>
+            <ul>
+              <li>Automatic backups update a single daily file and retain the 2 most recent automatic backups.</li>
+              <li><strong>Sensitive Key Exclusion:</strong> For your security, your encrypted Gemini API key and sensitive credentials are <strong>never included</strong> in exported ZIP backups.</li>
+              <li>Before restoring, the app validates archive integrity and file paths (Zip-Slip protection) so invalid files cannot overwrite your database.</li>
+            </ul>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">6</span> Data Deletion & User Rights (GDPR / CCPA)</h2>
-            <p>You have complete control and deletion rights over your data:</p>
+            <h2><span class="section-num">6</span> Data Deletion &amp; User Rights (GDPR / CCPA / KVKK)</h2>
+            <p>Because your data resides solely on your device, you have full control and deletion rights:</p>
             <ul>
-              <li><strong>Individual Record Deletion:</strong> You can delete any vehicle, fuel entry, maintenance record, or document individually at any time.</li>
-              <li><strong>App Uninstallation:</strong> Uninstalling the app or using Android Settings > Apps > Ufkana > Storage > "Clear Data" permanently purges the local database.</li>
+              <li><strong>Individual Record Deletion:</strong> Delete any vehicle, fuel/charge entry, maintenance log, tire record, document, or your saved API key inside the app at any time.</li>
+              <li><strong>Complete Removal:</strong> Uninstalling the app or selecting Android Settings &gt; Apps &gt; Ufkana &gt; Storage &gt; "Clear Data" permanently deletes the local database and Android Keystore key. You may also delete any exported ZIP archives from <code>Downloads/Ufkana_Backup/</code> using your file manager.</li>
             </ul>
           </div>
 
           <div class="doc-section">
             <h2><span class="section-num">7</span> Children's Privacy</h2>
-            <p>Ufkana is not intended for use by children under the age of 13, and we do not knowingly collect any personal information from children.</p>
+            <p>Ufkana is not intended for children under the age of 13, and we do not knowingly collect any personal information from children.</p>
           </div>
 
           <div class="doc-section">
@@ -290,7 +290,7 @@
       <!-- TAB 2: KULLANIM KOŞULLARI (TERMS OF SERVICE)                              -->
       <!-- ========================================================================= -->
       <div class="tab-content" id="content-terms">
-        
+
         <!-- TR SECTION: KOŞULLAR -->
         <div data-lang-tr>
           <div class="doc-section">
@@ -300,24 +300,25 @@
 
           <div class="doc-section">
             <h2><span class="section-num">2</span> Hizmetin Tanımı ve Kapsamı</h2>
-            <p>Ufkana; kullanıcıların araç yakıt tüketimini, şarj durumunu, periyodik bakım ve masraflarını kaydetmelerine, evrak sürelerini takip etmelerine ve yapay zeka destekli sesli asistan ile araç verilerini analiz etmelerine yardımcı olan akıllı bir araç yönetim asistanıdır.</p>
+            <p>Ufkana; benzinli, dizel, LPG, hibrit, plug-in hibrit (PHEV) ve elektrikli (BEV) araçların yakıt/şarj tüketimini, periyodik bakım ve lastik ömrünü, evrak/vergi tarihlerini takip etmenize, PDF raporları oluşturmanıza, Android Auto üzerinden araç durumunu ve bakım tahminlerini görüntülemenize ve isteğe bağlı yapay zeka asistanından yararlanmanıza yardımcı olan yerel öncelikli bir araç yönetim uygulamasıdır.</p>
           </div>
 
           <div class="doc-section">
             <h2><span class="section-num">3</span> Sürüş Güvenliği ve Sorumluluk Reddi</h2>
             <div class="callout-box amber">
-              <strong>⚠️ Önemli Sürüş Uyarısı:</strong> Sürüş esnasında trafik güvenliği ve dikkatin yolda olması tamamen sürücünün sorumluluğundadır. Ufkana ve Android Auto entegrasyonu sürücü dikkatini dağıtmayacak şekilde tasarlanmış olsa da, seyir halindeyken manuel veri girişi yapılmamalı, yerel trafik kurallarına daima öncelik verilmelidir.
+              <strong>⚠️ Önemli Sürüş Uyarısı:</strong> Sürüş esnasında trafik güvenliği ve dikkatin yolda olması tamamen sürücünün sorumluluğundadır. Ufkana ve Android Auto entegrasyonu sürücü dikkatini en aza indirecek şekilde tasarlanmış olsa da, seyir halindeyken manuel veri girişi yapılmamalı, yerel trafik kurallarına daima öncelik verilmelidir.
             </div>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">4</span> Analiz, Tahmin ve Öngörüler</h2>
-            <p>Uygulamada yer alan tüketim tahminleri, kalan menzil öngörüleri, aylık masraf projeksiyonları ve yapay zeka asistanı yanıtları matematiksel formüllere ve girilen geçmiş verilere dayanır. Bu veriler <strong>yalnızca bilgilendirme amaçlıdır</strong> ve resmi mekanik veya finansal garanti teşkil etmez.</p>
+            <h2><span class="section-num">4</span> Analizler, Tahminler ve Google Gemini API Kullanımı</h2>
+            <p>Uygulamada yer alan tüketim ortalamaları, yakıt tükenme ve sonraki bakım tarihi tahminleri, aylık harcama öngörüleri ve yapay zeka yanıtları matematiksel modellere ve sizin girdiğiniz kayıtlara dayanır. Bu veriler <strong>yalnızca bilgilendirme amaçlıdır</strong> ve resmi mekanik, teknik veya finansal garanti teşkil etmez.</p>
+            <p>İsteğe bağlı olarak tanımladığınız Google Gemini API anahtarının kullanım kotaları, faturalandırma ayarları ve Google AI Studio hizmet koşulları tamamen kullanıcının kendi Google hesabı sorumluluğundadır.</p>
           </div>
 
           <div class="doc-section">
             <h2><span class="section-num">5</span> Veri Yedekleme Sorumluluğu</h2>
-            <p>Uygulama yerel öncelikli çalıştığı için, cihazın kaybolması, sıfırlanması veya arızalanması durumunda veri kaybını önlemek adına düzenli olarak "Yedek Al" işlevini kullanmak kullanıcının sorumluluğundadır.</p>
+            <p>Uygulama yerel öncelikli çalıştığı ve merkezi bir bulut veritabanı bulunmadığı için, cihazın kaybolması, sıfırlanması veya arızalanması durumunda veri kaybını önlemek adına <code>Downloads/Ufkana_Backup/</code> klasöründeki yedeklerinizi düzenli olarak harici veya kişisel bulut alanınızda saklamak kullanıcının sorumluluğundadır.</p>
           </div>
 
           <div class="doc-section">
@@ -341,33 +342,34 @@
 
           <div class="doc-section">
             <h2><span class="section-num">2</span> Service Description</h2>
-            <p>Ufkana is an intelligent vehicle assistant designed to help users track fuel consumption, EV charging, maintenance expenses, document expirations, and perform voice-assisted data queries.</p>
+            <p>Ufkana is a local-first vehicle management assistant designed to help users track fuel and electric charging across ICE, Hybrid, PHEV, and BEV vehicles, monitor maintenance, tire lifespan, and document deadlines, generate PDF reports, view driving-safe status and maintenance forecasts on Android Auto, and optionally use voice/AI features.</p>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">3</span> Driving Safety & Liability Disclaimer</h2>
+            <h2><span class="section-num">3</span> Driving Safety &amp; Liability Disclaimer</h2>
             <div class="callout-box amber">
-              <strong>⚠️ Critical Driving Safety Notice:</strong> Road safety and complete attention during vehicle operation are entirely the driver's responsibility. Although Ufkana and its Android Auto integration are designed to minimize driver distraction, manual interaction with the screen while driving is strictly discouraged. Always prioritize traffic laws and road safety above all else.
+              <strong>⚠️ Critical Driving Safety Notice:</strong> Road safety and full attention while operating a vehicle are entirely the driver's responsibility. Although Ufkana and its Android Auto integration are designed to minimize driver distraction, manual data entry while driving is strictly discouraged. Always prioritize traffic laws and road safety.
             </div>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">4</span> Predictions & Analytical Estimates</h2>
-            <p>Fuel depletion forecasts, range estimations, monthly expense projections, and AI assistant insights are generated based on mathematical modeling and user-entered history. These calculations are provided for <strong>informational purposes only</strong> and do not constitute professional mechanical or financial warranties.</p>
+            <h2><span class="section-num">4</span> Estimates, Forecasts &amp; Google Gemini API Usage</h2>
+            <p>Consumption averages, fuel depletion and next maintenance date estimates, monthly expense projections, and AI insights are generated from mathematical models and user-entered history. They are provided for <strong>informational purposes only</strong> and do not constitute professional mechanical, technical, or financial warranties.</p>
+            <p>If you choose to configure a personal Google Gemini API key, compliance with Google AI Studio quotas, billing limits, and terms remains solely under your own Google account responsibility.</p>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">5</span> Data Responsibility & Backups</h2>
-            <p>Because Ufkana operates on a local-first paradigm without a centralized cloud database, users are responsible for regularly exporting and backing up their data using the built-in backup tools to prevent potential data loss resulting from device reset or damage.</p>
+            <h2><span class="section-num">5</span> Data Responsibility &amp; Backups</h2>
+            <p>Because Ufkana operates on a local-first paradigm without a centralized cloud database, users are responsible for regularly exporting and safeguarding backup archives from <code>Downloads/Ufkana_Backup/</code> to prevent data loss due to device reset, theft, or hardware failure.</p>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">6</span> Intellectual Property & Limited License</h2>
+            <h2><span class="section-num">6</span> Intellectual Property &amp; Limited License</h2>
             <p>All source code, designs, UI elements, branding, algorithms, and content of Ufkana are protected by intellectual property laws. Users are granted a personal, non-exclusive, non-transferable, revocable license to use the app.</p>
           </div>
 
           <div class="doc-section">
-            <h2><span class="section-num">7</span> Modifications & Contact</h2>
+            <h2><span class="section-num">7</span> Modifications &amp; Contact</h2>
             <p>We reserve the right to revise these Terms at any time. Changes take effect immediately upon being posted to this page.</p>
             <p>For inquiries: <a href="mailto:akaryakittakip@gmail.com" style="color: var(--accent-blue);">akaryakittakip@gmail.com</a></p>
           </div>
